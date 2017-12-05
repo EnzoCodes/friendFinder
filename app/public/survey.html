@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <title>Finder Survey</title>
+    </head>
+    <body>
+          <div class="container">
+            <div class="jumbotron">
+              <h1>Friend Finder</h1>
+              <h3>The greatest resource for finding new friends!</h3>
+              <hr>
+              <a href="/"><button type="button" class="btn btn-danger btn-lg" id="findFriend"><span class="glyphicon glyphicon-plus"></span> Home</button></a>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><strong>Quick Survey!</strong></h3>
+                <br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" class="form-control" placeholder="Enter Name" id="name">
+                    <br>
+                    <input type="text" class="form-control" placeholder="Enter Image Link" id="photo">
+                </div>
+            <br>
+                <div class="col-lg-8">
+                    <div class="box box-blue box-example-1to10">
+                        <div class="box-header">How much do you like Pizza?</div>
+                        <div class="box-body">
+                            <select id="q1" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="box box-blue box-example-1to10">
+                        <div class="box-header">How much do you like traveling?</div>
+                        <div class="box-body">
+                            <select id="q2" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="box box-blue box-example-1to10">
+                        <div class="box-header">How often do you read? (1 - NEVER || 10 - A book a week)</div>
+                        <div class="box-body">
+                            <select id="q3" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="box box-blue box-example-1to10">
+                        <div class="box-header">How much do you like following sports? </div>
+                        <div class="box-body">
+                            <select id="q4" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="box box-blue box-example-1to10">
+                        <div class="box-header">How satisfied are you with your work?</div>
+                        <div class="box-body">
+                            <select id="q5" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="box box-blue box-example-1to10">
+                        <div class="box-header">How much do you like "rainy" weather?</div>
+                        <div class="box-body">
+                            <select id="q6" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="box box-blue box-example-1to10">
+                        <div class="box-header">How much do youe enjoy a clear, sunny day?</div>
+                        <div class="box-body">
+                            <select id="q7" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="box box-blue box-example-1to10">
+                        <div class="box-header">How much do you like dogs?</div>
+                        <div class="box-body">
+                            <select id="q8" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="box box-blue box-example-1to10">
+                        <div class="box-header">How much do you like cats?</div>
+                        <div class="box-body">
+                            <select id="q9" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="box box-blue box-example-1to10">
+                        <div class="box-header">How outgoing are you? (1 - Go Away!, 5 - GIVE ME A HUG!)</div>
+                        <div class="box-body">
+                            <select id="q10" class="form-control">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary btn-md" id="results-btn"  data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-ok"></span>  Submit!</button>
+            </div>
+          </div>
+        </div>
+        <!-- MODAL -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Your Match!</h4>
+              </div>
+              <div class="modal-body">
+                <h1 id="matchName"></h1>
+                <img id="matchPic" src="#" width=350px alt="Match Image">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+        <script type="text/javascript">
+
+            $("#results-btn" || "#findFriend").on("click", function() {
+                event.preventDefault();
+
+                if ($('#name').val() == "" || $('#photo').val() == ""){
+                    alert("Name and Photo are required!");
+                    return false;
+                } else {
+
+                    var newFriend = {
+                        name: $("#name").val().trim(),
+                        photo: $("#photo").val().trim(),
+                        scores: []
+                    };
+
+                    for (var i = 1; i < 10; i++){
+                        var qData = ($('#q'+i).val());
+                        newFriend.scores.push(JSON.parse(qData));
+                        console.log(i);
+                    }
+                    console.log(newFriend.scores);
+                    console.log(newFriend);
+                }
+
+                $.post("/api/friends", newFriend,
+                  function(data) {
+                    // If a table is available... tell user they are booked.
+                    if (data) {
+                      alert("Yay! You're in our database!");
+                    }
+
+                    // If a table is available... tell user they on the waiting list.
+                    else {
+                      alert("Sorry you didn't make it in for some reason.");
+                    }
+
+                    // Clear the form when submitting
+                    $("#name").val("");
+                    $("#photo").val("");
+
+                    for (var i = 1; i < 10; i++){
+                    $("#q"+i).val("");
+                    }
+
+
+
+                  });
+
+
+
+            });
+            // $("#search-btn").on("click", function() {
+            //   var searchedCharacter = $("#character-search").val().trim();
+            //
+            //   searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
+            //
+            //   $.get("/api/" + searchedCharacter, function(data) {
+            //     console.log(data);
+            //     if (data) {
+            //       $("#stats").show();
+            //       $("#name").text(data.name);
+            //       $("#role").text(data.role);
+            //       $("#age").text(data.age);
+            //       $("#force-points").text(data.forcePoints);
+            //     }
+            //     else {
+            //       $("#name").text("The force is not strong with this one. Your character was not found.");
+            //       $("#stats").hide();
+            //     }
+            //   });
+            // });
+          </script>
+    </body>
+</html>
