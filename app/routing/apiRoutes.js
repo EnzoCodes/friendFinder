@@ -36,26 +36,22 @@ module.exports = function(app) {
       // This works because of our body-parser middleware
       var newFriend = req.body;
 
-      newFriend.routeName = newFriend.name.replace(/\s+/g, "").toLowerCase();
-      //Might need to be some more stuff here...
-
-      console.log(newFriend);
-
-      personList.push(newFriend);
-
-      // console.log("PList[0].scores = " + personList[0].scores);
-      // console.log("PList[0].scores[0] = " + personList[0].scores[0]);
-      // console.log("NewFriend.scores[0] = " + newFriend.scores[0]);
+      // newFriend.routeName = newFriend.name.replace(/\s+/g, "").toLowerCase();
+      // //Might need to be some more stuff here...
+      var newFiend = {
+          "name": req.body.name,
+          "photo": req.body.photo,
+          "scores": req.body.scores.map(Number)
+      };
 
       var match = {
           name: "",
           image: "",
-          scoresDiff: 100
+          scoresDiff: 1000
       };
 
       console.log(match);
-
-
+      
       var totalDiff = 0;
 
       for (var i=0; i < personList.length; i++) {
@@ -73,6 +69,7 @@ module.exports = function(app) {
 
       console.log(match);
 
+      personList.push(newFriend);
       res.json(match);
       // res.json(newFriend);
     });
